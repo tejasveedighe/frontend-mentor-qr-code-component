@@ -12,6 +12,10 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="htps://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">      
+
     <title>Frontend Mentor | QR code component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -26,29 +30,45 @@
       }
       .fullcard {
         width: 245px;
+        background-color: white;
+        height: 400px;
         border: 1px solid #000;
         margin: auto;
         padding: 10px;
+        text-align: center;
       }
       .qr-code{
         margin: auto;
-        border: 0px solid ;
+        border: 0px solid;
+      }
+      * {
+        font-family: 'Open Sans', sans-serif;
+        border-radius: 5px;
+      }
+      .card-holder {
+        margin: auto;
+        max-width: 1440px; 
+        max-height: 900px;
+        background-color: hsl(220, 15%, 55%);
       }
     </style>
   </head>
   <body>
+    <div class="card-holder">
     <div class="fullcard">
       <div class="qr-code">
-        <img id="qr-img" src="images/image-qr-code.png" width="150px"/>
+        <img id="qr-img" src="images/image-qr-code.png" width="245px"/>
       </div>
-      Improve your front-end skills by building projects Scan the QR code to
+      <p>
+     <h4>Improve your front-end skills by building projects </h4> Scan the QR code to
       visit Frontend Mentor and take your coding skills to the next level
-
+      </p>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>.
+      </div>
       </div>
     </div>
   </body>
